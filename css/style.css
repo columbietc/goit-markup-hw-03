@@ -1,10 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Остальной код */
 /* basic color
 color: #212121; 
 color: #ffffff
 color: #757575
 color: #2196F3
 color: #F5F4FA
-
 /* ------------Синтаксис переменных color------*/
 :root {
   --primary-text-color: #212121;
@@ -24,6 +30,8 @@ body {
 
 /* служебный класс */
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -33,6 +41,14 @@ body {
 
 /* ---------------------HEADER---------- */
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+.header {
+  background-color: var(--text-bacground-color);
+}
 .header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -68,12 +84,27 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-
+.line {
+  position: absolute;
+  width: 1600px;
+  height: 0px;
+  left: 0px;
+  top: 80px;
+  border: 1px solid #ececec;
+}
 /* -----------------------HERO------------- */
 .hero {
+  text-align: center;
   background-color: var(--primary-bacground-color);
 }
+.section-hero {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -85,13 +116,15 @@ body {
 }
 
 .hero-btn {
+  display: inline-block;
   font-family: inherit;
+  align-items: center;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   background-color: #2196f3;
   color: var(--text-bacground-color);
@@ -128,9 +161,14 @@ body {
 
   color: var(--primary-text-color);
 }
-/* -----------------MASTERS------------------------ */
+/* -----------------TEAM------------------------ */
 .team {
   background-color: var(--secondary-bacground-color);
+}
+.section-team {
+  margin-right: auto;
+  margin-right: auto;
+  width: 1200px;
 }
 .team-title {
   font-weight: 700;
@@ -196,7 +234,23 @@ body {
 }
 
 /* ------------------PORTFOLIO---------------------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .filtr-btn {
+  border-radius: 4px;
+  min-width: 73px;
+  padding: 6px 22px;
   display: inline-block;
   font-weight: 500;
   font-size: 16px;
