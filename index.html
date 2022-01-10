@@ -11,11 +11,11 @@
       rel="stylesheet">
     <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css">
    <link rel="stylesheet" href="./css/style.css">
- 
+                                 <!-- хедер -->
 </head>
 <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
             <nav class="header-nav">
                 <a class="header-logo link" href="/">Web<span class="accent">Studio</span> </a>
                 <ul class="list header-list">
@@ -30,30 +30,33 @@
                     </li>
                 </ul>
             </nav>
-            <ul class="list">
-                <li class="header-item">
-                    <a class="link header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="header-item">
-                    <a class="link header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-            </ul>
+            <div class="header-left">
+                <ul class="list">
+                    <li class="header-item">
+                        <a class="link header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="link header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+           
       </div>
-      <div class="line"></div>
+
     </header>
     <main>
-                                    <!-- герой -->
+                                    <!--1-Секция герой -->
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container ">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="hero-btn">Заказать услугу</button>
     </div>
         </section>
   
-                                    <!-- описание      -->
+                                    <!--2-Секция преимущества      -->
 
     <section class="about">
-     <div class="container">
+     <div class="container contaiter-list">
         <ul class="list about-list">
             <li class="about-item">
                 <h2 class="about-title">Внимание к деталям</h2>
@@ -82,20 +85,24 @@
         </ul>
      </div>
     </section>
+                            <!------------3-секция-о-нас  -->
     <section>
-        <h2 class="about-doing">Чем мы занимаемся</h2>
-        <ul class="list">
-            <li>
-                <img src="./images/imgkeyboard.jpg" alt="програмист работает за столом" width="370" height="294">
-            </li>
-            <li>
-                <img src="./images/imgphone.jpg" alt="разрабатывают мобильный интерфейс" width="370" height="294">
-            </li>
-            <li>
-                <img src="./images/imgtablet.jpg" alt="подбор цветов на планшете" width="370" height="294">
-            </li>
-        </ul>
+        <div class="container">
+            <h2 class="about-doing">Чем мы занимаемся</h2>
+            <ul class="list">
+                <li>
+                    <img src="./images/imgkeyboard.jpg" alt="програмист работает за столом" width="370" height="294">
+                </li>
+                <li>
+                    <img src="./images/imgphone.jpg" alt="разрабатывают мобильный интерфейс" width="370" height="294">
+                </li>
+                <li>
+                    <img src="./images/imgtablet.jpg" alt="подбор цветов на планшете" width="370" height="294">
+                </li>
+            </ul>
+        </div>
     </section>
+                                <!-- 4-секция-команда -->
     <section class="team">
        <div class="container">
             <h2 class="team-title">Наша команда</h2>
@@ -124,6 +131,7 @@
        </div>
     </section>
     </main>
+                                        <!-- футер -->
     <footer class="footer">
        <div class="container">
             <h2 lang="eu" class="footer-title">

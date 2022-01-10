@@ -49,12 +49,21 @@ li {
 /* ---------------------HEADER---------- */
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto 0;
+  margin-right: auto 0;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: var(--text-bacground-color);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  outline: 1px solid #ececec;
 }
 .header-logo {
   font-family: 'Raleway', sans-serif;
@@ -62,7 +71,14 @@ li {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+  margin-right: 93px;
   color: var(--accent-text-color);
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-left {
+  margin-left: auto;
 }
 .accent {
   color: var(--first-logo-color);
@@ -83,6 +99,9 @@ li {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+.header-list {
+  display: flex;
+}
 .header-tel,
 .header-mail {
   font-weight: 500;
@@ -101,20 +120,25 @@ li {
 }
 /* -----------------------HERO------------- */
 .hero {
+  padding: 200px 0 280px 0;
   text-align: center;
   background-color: var(--primary-bacground-color);
+}
+.hero-container {
+  align-items: center;
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+  /* align-items: center; */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
+  max-width: 696px;
   color: var(--text-bacground-color);
 }
 
@@ -156,6 +180,12 @@ li {
 }
 .about-list {
   display: flex;
+}
+.container-list {
+  width: 270px;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
 }
 .about-after-title {
   margin-top: 0;
@@ -272,6 +302,7 @@ li {
 }
 .btn-list {
   display: flex;
+  justify-content: center;
 }
 .filtr-btn {
   cursor: pointer;
